@@ -26,9 +26,9 @@ Vui lòng thực thi các file script trong thư mục `sql/` theo thứ tự sa
 - **Hình 1:** Ảnh chạy câu lệnh `SELECT * FROM SinhVien` (với tư cách là sysadmin) để cho thấy cột CCCD lưu dưới dạng mã hóa không thể đọc được.
 ![Hình 1: Dữ liệu mã hóa](images/demo_encrypted_data.png)
 - **Hình 2:** Ảnh thực thi `EXEC sp_GetDanhSachSinhVien` trả về cột đã giải mã hợp lệ.
-![Hình 1: Dữ liệu mã hóa](images/demo_decrypted_data.png)
+![Hình 2: Dữ liệu giải mã](images/demo_decrypted_data.png)
 - **Hình 3:** Ảnh báo lỗi (Permission Denied) khi một user thuộc `Role_QuanLyDaoTao` cố gắng `SELECT` trực tiếp từ bảng `SinhVien`.
-![Hình 1: Dữ liệu mã hóa](images/demo_permission_denied.png)
+![Hình 3: Báo lỗi phân quyền](images/demo_permission_denied.png)
 
 ##  Phân tích Ưu - Nhược điểm
 
